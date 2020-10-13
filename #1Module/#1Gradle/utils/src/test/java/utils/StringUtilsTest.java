@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class StringUtilsTest {
+
     
 @Test
 	public void testIsPositiveNumber() {
