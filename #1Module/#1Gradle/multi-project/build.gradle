@@ -16,24 +16,22 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
-version = '1.3.5'
 
 allprojects {
 	repositories {
     	// Use jcenter for resolving dependencies.
     	// You can declare any Maven/Ivy/file repository here.
     	jcenter()
+
+	version = '1.3.5'
 	}
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+subprojects {
+   apply plugin: 'java'
 }
 
-dependencies {
-
-    
+dependencies {   
 
     // Apache Commons Lang 3.10
     api 'org.apache.commons:commons-lang3:3.10'
