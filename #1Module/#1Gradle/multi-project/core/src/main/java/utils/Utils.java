@@ -5,11 +5,15 @@
 package utils;
 
 
+import utils.StringUtils;
+
+
 public class Utils {
 
 public static boolean isAllPositiveNumbers(String... str) throws NumberFormatException {
-
 		return StringUtils.isAllPositiveNumbers(str);
+	
+
 	}
 
 }

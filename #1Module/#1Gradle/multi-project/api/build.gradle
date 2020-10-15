@@ -11,5 +11,5 @@ java {
 mainClassName = 'api.App'
 
 dependencies {
-	compile project(':core')
+	implementation project(':core')
 }
