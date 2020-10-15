@@ -9,15 +9,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+
 class StringUtilsTest {
 
     
-@Test
+	@Test
 	public void testIsPositiveNumber() {
 		assertTrue(StringUtils.isPositiveNumber("5"));
 		assertFalse(StringUtils.isPositiveNumber("0"));
 		assertFalse(StringUtils.isPositiveNumber("-3"));
 	} 
-}
 
 }
