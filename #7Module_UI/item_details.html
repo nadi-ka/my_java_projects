@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Item Details-page</title>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+
+    <nav class="top_nav">
+
+      <div class="drop_down">
+        <button class="dropbtn">
+          <img src="img/baseline_list_black_18dp.png">
+        </button>
+          <div class="dropdown-content">
+            <a href="main.html">Main</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+      </div>
+
+      <div class="page_ref">
+        <div class="icon">
+          <a href="heart.html">
+            <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="basket.html">
+            <img class="nav_icon" src="img/baseline_shopping_cart_black_18dp.png">
+          </a>
+        </div>
+
+        <div class="login_sign_ref">
+          <a href="login.html">Login</a> |
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="search_form">
+        <input class="inp_search" type="text" placeholder="Search by item name">
+        <input class="inp_search" list="categories" name="categories" placeholder="All categories" />
+          <datalist id="categories">
+            <option value="tag">
+            <option value="name">
+            <option value="description">
+          </datalist>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Under navbar -->
+  <div class="total_box">
+
+    <div class="horizont_container">
+
+      <div class="rectangle">
+      </div>
+
+      <div class="description_box">
+        <div class="margin_l_10">
+          <h3>Certificate Name</h3>
+          <p class="s_space_str">Short description of the certificate:</p>
+          <p class="s_space_str font_gray">- some details;</p>
+          <p class="s_space_str font_gray">- some details;</p>
+          <p class="s_space_str font_gray">- some details;</p>
+        </div>
+
+        <div class="margin_l_10">
+          <p class="m_p_size_top_marg font_gray">Certificete duration:</p>
+          <p class="s_space_str">90 days</p>
+        </div>
+
+        <div class="inline_price_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+
+          <div class="input_cart">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart_btn" type="submit">
+                <p class="inline_block marg_bottom_5">Add to Cart</p>
+                <img class="inline_block" src="img/baseline_shopping_cart_black_18dp.png">
+              </button>
+            </form>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="bottom_container">
+      <h3 class="margin_l_10">Full description of the certificate:</h3>
+      <div class="align_left_container">
+        <p class="s_space_str font_gray">- some details; certificate description; certificate duration; etc.;</p>
+        <p class="s_space_str font_gray">- some details; certificate description; certificate duration; etc.;</p>
+        <p class="s_space_str font_gray">- some details; certificate description; certificate duration; etc.;</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+
+  </body>
+  </html>

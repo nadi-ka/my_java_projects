@@ -426,3 +426,104 @@ input[type="file"] {
 #lower_label_block {
   display: inline;
 }
+
+/*
+  ========================================
+  Item delails
+  ========================================
+*/
+
+.total_box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizont_container {
+  width: 90%;
+  height: 40%;
+}
+
+.rectangle {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #bbb;
+  margin-right: 30px;
+}
+
+.description_box {
+  position: absolute;
+  display:  inline-block;
+  width: 25%;
+  height: 40%;
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.margin_l_10 {
+  margin-left: 10px;
+}
+
+.s_space_str {
+  margin: 2px;
+  padding-top: 2px;
+}
+
+.m_p_size_top_marg {
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.font_gray {
+  color: #404040;
+}
+
+.inline_price_block {
+  display: inline;
+  float: left;
+  padding: 10px;
+}
+
+.input_cart {
+  display: inline;
+  float: right;
+  margin-left: 180px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.add_cart_btn {
+  border-color: #fff;
+  background-color: #fff;
+  color: #008B8B;
+  align-items: flex-end;
+}
+
+.add_cart_btn:hover {
+  opacity: 0.8;
+}
+
+.inline_block {
+  display: inline;
+}
+
+.marg_bottom_5 {
+  margin-bottom: 5px;
+}
+
+.bottom_container {
+  display: flex;
+  width: 50%;
+  height: 40%;
+  margin-top: 30px;
+}
+
+.align_left_container {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 10px;
+}

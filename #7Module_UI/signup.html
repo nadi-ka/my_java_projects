@@ -9,10 +9,52 @@
 <body>
 
   <!-- Navbar included-->
-  <div>
-    <iframe class="nav_box" src="navbar.html" width= "100%"
-    frameborder= "0"></iframe>
-  </div>
+  <!-- Navbar -->
+  <header>
+
+    <nav class="top_nav">
+
+      <div class="drop_down">
+        <button class="dropbtn">
+          <img src="img/baseline_list_black_18dp.png">
+        </button>
+          <div class="dropdown-content">
+            <a href="main.html">Main page</a>
+            <a href="#">New Certificate</a>
+            <a href="#">Link 3</a>
+          </div>
+      </div>
+
+      <div class="page_ref">
+        <div class="icon">
+          <a href="heart.html">
+            <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="basket.html">
+            <img class="nav_icon" src="img/baseline_shopping_cart_black_18dp.png">
+          </a>
+        </div>
+
+        <div class="login_sign_ref">
+          <a href="login.html">Login</a> |
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="search_form">
+        <input class="inp_search" type="text" placeholder="Search by item name">
+        <input class="inp_search" list="categories" name="categories" placeholder="All categories" />
+          <datalist id="categories">
+            <option value="tag">
+            <option value="name">
+            <option value="description">
+          </datalist>
+      </div>
+
+    </nav>
+  </header>
 
   <!-- Form -->
   <form class="form_parent">
