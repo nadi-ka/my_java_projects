@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp-page</title>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+
+    <nav class="top_nav">
+
+      <div class="drop_down">
+        <button class="dropbtn">
+          <img src="img/baseline_list_black_18dp.png">
+        </button>
+          <div class="dropdown-content">
+            <a href="main.html">Main</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+      </div>
+
+      <div class="page_ref">
+        <div class="icon">
+          <a href="heart.html">
+            <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="basket.html">
+            <img class="nav_icon" src="img/baseline_shopping_cart_black_18dp.png">
+          </a>
+        </div>
+
+        <div class="login_sign_ref">
+          <a href="login.html">Login</a> |
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="search_form">
+        <input class="inp_search" type="text" placeholder="Search by item name">
+        <input class="inp_search" list="categories" name="categories" placeholder="All categories" />
+          <datalist id="categories">
+            <option value="tag">
+            <option value="name">
+            <option value="description">
+          </datalist>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Upper panel -->
+   <div class="upper_panel">
+
+     <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Sport<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Quest<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Tag<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Animals<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Gastro<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Adventure<p>
+      </div>
+    </div>
+
+    <div class="square_container">
+      <div class="square">
+      </div>
+      <div class="square_label">
+        <p>Extrim<p>
+      </div>
+    </div>
+
+   </div>
+
+   <!-- Lower panel -->
+
+   <div class="lower_panel">
+
+     <div class="lower_sqr_container_out">
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+     </div>
+
+     <div class="lower_sqr_container_out">
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+       <div class="lower_sqr_container_inn">
+         <div class="square_lower">
+         </div>
+         <div class="square_label_lower">
+
+           <div id="upper_label_block">
+             <div class="text_block">
+               <p id="l_p_size">Certificate name</p>
+               <p id="s_p_size">Brief description</p>
+             </div>
+             <div class="heart_block">
+               <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+             </div>
+          </div>
+
+          <div id="lower_label_block">
+            <div class="price_block">
+              <p id="l_p_size_bold">$100</p>
+            </div>
+            <div class="cart_block">
+              <form action="/cart/add" method="POST">
+                <input name="quantity" type="hidden" value="1" />
+                <input name="product_id" type="hidden" value="" />
+                <input name="product_name" type="hidden" value="Skydiving" />
+                <button class="add_cart" type="submit">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+         </div>
+       </div>
+
+   </div>
+
+   <div class="lower_sqr_container_out">
+
+     <div class="lower_sqr_container_inn">
+       <div class="square_lower">
+       </div>
+       <div class="square_label_lower">
+
+         <div id="upper_label_block">
+           <div class="text_block">
+             <p id="l_p_size">Certificate name</p>
+             <p id="s_p_size">Brief description</p>
+           </div>
+           <div class="heart_block">
+             <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+           </div>
+        </div>
+
+        <div id="lower_label_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+          <div class="cart_block">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </div>
+
+     <div class="lower_sqr_container_inn">
+       <div class="square_lower">
+       </div>
+       <div class="square_label_lower">
+
+         <div id="upper_label_block">
+           <div class="text_block">
+             <p id="l_p_size">Certificate name</p>
+             <p id="s_p_size">Brief description</p>
+           </div>
+           <div class="heart_block">
+             <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+           </div>
+        </div>
+
+        <div id="lower_label_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+          <div class="cart_block">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </div>
+
+     <div class="lower_sqr_container_inn">
+       <div class="square_lower">
+       </div>
+       <div class="square_label_lower">
+
+         <div id="upper_label_block">
+           <div class="text_block">
+             <p id="l_p_size">Certificate name</p>
+             <p id="s_p_size">Brief description</p>
+           </div>
+           <div class="heart_block">
+             <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+           </div>
+        </div>
+
+        <div id="lower_label_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+          <div class="cart_block">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </div>
+
+     <div class="lower_sqr_container_inn">
+       <div class="square_lower">
+       </div>
+       <div class="square_label_lower">
+
+         <div id="upper_label_block">
+           <div class="text_block">
+             <p id="l_p_size">Certificate name</p>
+             <p id="s_p_size">Brief description</p>
+           </div>
+           <div class="heart_block">
+             <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+           </div>
+        </div>
+
+        <div id="lower_label_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+          <div class="cart_block">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </div>
+
+     <div class="lower_sqr_container_inn">
+       <div class="square_lower">
+       </div>
+       <div class="square_label_lower">
+
+         <div id="upper_label_block">
+           <div class="text_block">
+             <p id="l_p_size">Certificate name</p>
+             <p id="s_p_size">Brief description</p>
+           </div>
+           <div class="heart_block">
+             <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+           </div>
+        </div>
+
+        <div id="lower_label_block">
+          <div class="price_block">
+            <p id="l_p_size_bold">$100</p>
+          </div>
+          <div class="cart_block">
+            <form action="/cart/add" method="POST">
+              <input name="quantity" type="hidden" value="1" />
+              <input name="product_id" type="hidden" value="" />
+              <input name="product_name" type="hidden" value="Skydiving" />
+              <button class="add_cart" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+       </div>
+     </div>
+
+ </div>
+
+</div>
+
+</body>
+</html>

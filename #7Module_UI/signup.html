@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp-page</title>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+
+  <!-- Navbar included-->
+  <div>
+    <iframe class="nav_box" src="navbar.html" width= "100%"
+    frameborder= "0"></iframe>
+  </div>
+
+  <!-- Form -->
+  <form class="form_parent">
+
+    <div class="upper_box">
+      <h3 id="h3_h_indent">Register</h3>
+    </div>
+
+    <fieldset>
+
+      <div class="box">
+        <label class="label_sign" for="LoginName">Login name</label>
+        <input class="sign_f_input" type="text" id="loginName">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="Email">Email</label>
+        <input class="sign_f_input" type="email" id="email">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="FirstName">First name</label>
+        <input class="sign_f_input" type="text" id="firstName">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="Surname">Surname</label>
+        <input class="sign_f_input" type="text" id="surname">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="Password">Password</label>
+        <input class="sign_f_input" type="password" id="password">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="RepeatPassword">Repeat</label>
+        <input class="sign_f_input" type="password" id="repeatPassword">
+      </div>
+
+      <div class="box_btn">
+        <input class="cancel_btn sign_btn" type="button"
+          onclick="window.location.replace('main.html')" value="Cancel" />
+        <input class="submit_btn sign_btn" type="submit" value="Sign Up">
+      </div>
+
+    </fieldset>
+  </form>
+
+</body>
+</html>

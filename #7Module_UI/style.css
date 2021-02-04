@@ -1,0 +1,428 @@
+html, body {
+  background-color: #E8E8E8;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+form {
+  background-color: #F8F8F8;
+  border: 3px solid #f1f1f1;
+}
+
+.login_f_input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align:center;
+}
+
+.submit_btn {
+  color: #FFF;
+  background-color: #4CAF50;
+}
+
+.form_block {
+  display: block;
+  align: center;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 25%;
+  margin-top: 10%;
+  width: 20%;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 16px;
+}
+
+#login_btn {
+  text-align: center;
+  padding: 20px;
+  border: 2px;
+  border-radius: 2px;
+  width: 75%;
+}
+
+#login_btn:hover {
+  opacity: 0.8;
+}
+
+/*
+========================================
+Navbar
+========================================
+*/
+
+.nav_box {
+  width: "100%";
+  frameborder: "0";
+}
+
+.top_nav {
+  background-color: #fff;
+  text-align: center;
+}
+
+.drop_down {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.dropbtn {
+  background-color: #fff;
+  padding: 8px;
+  font-size: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.drop_down:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.page_ref {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.nav_icon {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.nav_icon:hover {
+  opacity: 0.8;
+}
+
+.login_sign_ref {
+  display: inline-block;
+}
+
+.login_sign_ref a:hover {
+  opacity: 0.8;
+}
+
+.search_form {
+  display: inline-block;
+}
+
+.inp_search {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align:center;
+}
+
+/*
+  ========================================
+  SignUp
+  ========================================
+*/
+
+.form_parent {
+  box-sizing: border-box;
+  display: block;
+  align: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 1em;
+  padding: 0;
+  position: absolute;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 50%;
+  float: left;
+  font-size: 1em;
+  margin: 0;
+}
+
+.label_sign {
+  display: inline;
+  float: left;
+}
+
+.sign_f_input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  margin: 0;
+}
+
+.box_btn {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+}
+
+.sign_btn {
+  padding: 20px;
+  border: 2px solid #787878;
+  border-radius: 2px;
+}
+
+.sign_btn:hover {
+  opacity: 0.8;
+}
+
+.upper_box {
+  background-color: #787878;
+  text-align: left;
+  color: #fff;
+  margin-top: -20px;
+  position: relative;
+  height: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#h3_h_indent {
+  margin-left: 10px;
+}
+
+/*
+  ========================================
+  Add_item
+  ========================================
+*/
+
+.box_block {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.textarea {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  margin: 0;
+}
+
+.input_blok {
+  box-sizing: border-box;
+  margin: 0;
+  width: 95%;
+}
+
+.input_box {
+  padding: 0.5rem;
+  width: 50%;
+  float: left;
+  font-size: 1em;
+  margin: 0;
+}
+
+.textarea_box {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 47%;
+  height: 140px;
+  font-size: 1em;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+.multiselect {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  margin: 0;
+  height: 51px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #787878;
+  background-color: #fff;
+  height: 50px;
+  cursor: pointer;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+
+.upper_panel {
+  height: 20%;
+  background-color: #bbb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower_panel {
+  left: 0;
+  right: 0;
+  height: 70%;
+  bottom: 0;
+  background-color: #E8E8E8;
+}
+
+.square_container {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px;
+  background-color: #fff;
+  margin-right: 50px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.square_label {
+  height: 20px;
+  background-color: #bbb;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.lower_sqr_container_out {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower_sqr_container_inn {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 10px 5px;
+  background-color: #bbb;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.square_lower {
+  width: 170px;
+  height: 170px;
+  position: relative;
+}
+
+.square_label_lower {
+  height: 80px;
+  background-color: #fff;
+  position: relative;
+}
+
+.text_block {
+  float: left;
+}
+
+.heart_block {
+  float: right;
+}
+
+.price_block {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.cart_block {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 160px;
+}
+
+#l_p_size {
+  margin-bottom: 2px;
+}
+
+#s_p_size {
+  font-size: 10px;
+  margin: 2px;
+  padding-top: 2px;
+}
+
+#l_p_size_bold {
+  margin: 2px;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+#upper_label_block {
+  display: inline;
+}
+
+#lower_label_block {
+  display: inline;
+}

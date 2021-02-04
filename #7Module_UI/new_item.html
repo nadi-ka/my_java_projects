@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Item-page</title>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+
+  <!-- Navbar included-->
+  <div>
+    <iframe class="nav_box" src="navbar.html" width= "100%"
+    frameborder= "0"></iframe>
+  </div>
+
+  <!-- Form -->
+  <form class="form_parent">
+
+    <div class="upper_box">
+      <h3 id="h3_h_indent">Add New Item</h3>
+    </div>
+
+    <fieldset>
+
+      <div class="box">
+        <label class="label_sign" for="certName">Certificate Name</label>
+        <input class="sign_f_input" type="text" id="certName">
+      </div>
+
+      <div class="box">
+        <label class="label_sign" for="duration">Duration in days</label>
+        <input class="sign_f_input" type="text" id="duration">
+      </div>
+
+      <div class="box_block">
+        <div class="input_blok">
+          <div class="input_box">
+            <label class="label_sign" for="tag">Tags</label>
+            <select class="multiselect" name="cars" id="cars" multiple>
+              <option value="#Sport">#Sport</option>
+              <option value="#Relax">#Relax</option>
+              <option value="#SPA">#SPA</option>
+              <option value="#Quest">#Quest</option>
+            </select>
+          </div>
+
+          <div class="input_box">
+            <label class="label_sign" for="date">Creation Date</label>
+            <input class="sign_f_input" type="date" id="creation_date">
+          </div>
+        </div>
+
+        <div class="textarea_box">
+          <label class="label_sign" for="descript_s">Short Description</label>
+          <textarea class="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="box_block">
+        <div class="input_blok">
+          <div class="input_box">
+            <label class="label_sign" for="price">Price</label>
+            <input class="sign_f_input" type="number" id="cert_price">
+          </div>
+
+          <div class="input_box">
+            <label class="label_sign" for="images">Images</label>
+            <label class="custom-file-upload" for="images"></label>
+            <input type="file" id="images"/>
+          </div>
+        </div>
+
+        <div class="textarea_box">
+          <label class="label_sign" for="descript_l">Long Description</label>
+          <textarea class="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="box_btn">
+        <input class="cancel_btn sign_btn" type="button"
+          onclick="window.location.replace('main.html')" value="Cancel" />
+        <input class="submit_btn sign_btn" type="submit" value="Sign Up">
+      </div>
+
+    </fieldset>
+  </form>
+
+
+</body>
+</html>
