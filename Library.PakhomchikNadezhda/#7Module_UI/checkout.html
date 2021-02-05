@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Checkout-page</title>
+<link rel='stylesheet' href='css/style.css'/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+
+    <nav class="top_nav">
+
+      <div class="drop_down">
+        <button class="dropbtn">
+          <img src="img/baseline_list_black_18dp.png">
+        </button>
+          <div class="dropdown-content">
+            <a href="main.html">Main</a>
+            <a href="new_item.html">Add Certificate</a>
+          </div>
+      </div>
+
+      <div class="page_ref">
+        <div class="icon">
+          <a href="heart.html">
+            <img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="checkout.html">
+            <img class="nav_icon" src="img/baseline_shopping_cart_black_18dp.png">
+          </a>
+        </div>
+
+        <div class="login_sign_ref">
+          <a href="login.html">Login</a> |
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+
+      <div class="search_form">
+        <input class="inp_search" type="text" placeholder="Search by item name">
+        <input class="inp_search" list="categories" name="categories" placeholder="All categories" />
+          <datalist id="categories">
+            <option value="tag">
+            <option value="name">
+            <option value="description">
+          </datalist>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="upper_panel_s">
+    <h1 class="margin_l_200">Checkout</h1>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="square_80">
+      </div>
+    </div>
+    <div class="grid-item-text">
+      <h3><a href="item_details.html">Certificate Name</a></h3>
+      <p>Gift certificates allow a business to generate
+        an additional revenue stream. They also give customers a
+        quick and simple gift idea for loved ones.
+      </p>
+    </div>
+    <div class="grid-item">
+      <p class="font_bold">$100</p>
+    </div>
+    <div class="grid-item">
+      <div class="square_80">
+      </div>
+    </div>
+    <div class="grid-item-text">
+      <h3><a href="item_details.html">Certificate Name</a></h3>
+      <p>Gift certificates allow a business to generate
+        an additional revenue stream. They also give customers a
+        quick and simple gift idea for loved ones.
+      </p>
+    </div>
+    <div class="grid-item">
+      <p class="font_bold">$100</p>
+    </div>
+    <div class="grid-item">
+      <div class="square_80">
+      </div>
+    </div>
+    <div class="grid-item-text">
+      <h3><a href="item_details.html">Certificate Name</a></h3>
+      <p>Gift certificates allow a business to generate
+        an additional revenue stream. They also give customers a
+        quick and simple gift idea for loved ones.
+      </p>
+    </div>
+    <div class="grid-item">
+      <p class="font_bold">$100</p>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      <div class="inline_block">
+        <p class="font_bold inline_block">Total: </p>
+        <p class="font_bold inline_block">$300</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="button_box margin_l_200">
+    <input class="submit_btn sign_btn float_r" type="submit" value="Checkout">
+    <input class="back_btn sign_btn float_r" type="button"
+      onclick="window.location.replace('main.html')" value="Back" />
+  </div>
+
+</body>
+</html>
