@@ -6,7 +6,7 @@
  */
 
 const {secondsToDate, toBase2Converter, substringOccurrencesCounter, repeatingLitters, 
-    redundant, towerHanoi, matrixMultiplication} = require('./task1');
+    redundant, towerHanoi, matrixMultiplication, gather} = require('./task1');
 
 test("when add milliseconds to 01.06.20201 -> then returns new date", () => {
   expect(secondsToDate(31536000)).toEqual(new Date (Date.parse("2021-06-01")));
@@ -81,3 +81,13 @@ test("when give two matricies (n x n each) -> then returns the result of multipl
     var matrExpected1 = [[19,22],[43,50]];
     expect(matrixMultiplication(m1, m2)).toEqual(matrExpected1);
   });
+
+  /** gather() test;
+ * @param {string} str
+ * @return {string}
+ */
+
+test("when give str and num -> then returns all of the arguments provided to the gather functions as a string in the order specified in the order functions", 
+  () => {
+    expect(gather("e")("l")("o")("l")("!")("h").order(5)(0)(1)(3)(2)(4).get()).toBe("hello!");
+});

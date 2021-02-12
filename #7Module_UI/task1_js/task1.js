@@ -156,10 +156,6 @@ function matrixMultiplication(matrix1, matrix2) {
     return result;
 }
 
-var m1 = [[1,2],[3,4]];
-var m2 = [[5,6],[7,8]];
-console.log(matrixMultiplication(m1, m2));
-
 /**
  * Create a gather function that accepts a string argument and returns another function.
  * The function calls should support continued chaining until order is called.
@@ -176,76 +172,50 @@ console.log(matrixMultiplication(m1, m2));
  *      gather("e")("l")("o")("l")("!")("h").order(5)(0)(1)(3)(2)(4).get()  ➞ "hello"
  */
 function gather(str) {
-    // var resultStr = str;
-    return function(str2) {
-        return str += " " + str2;
-        // if (str2) {
-        // //   resultStr += " " + str2;
-        //     str += " " + str2;
-        // }
-        // //   return gather;
-      };
-}
-
-var fun = gather("a")("b")("c");
-console.log(gather());
-
-function order(num) {
-    var numStr = "" + num;
-    return function(num2) {
-        if (num2) {
-          numStr+= " " + num2;
-        }
-         return numStr;
-      };
-}
-
-
-// var fun2 = order(2)(1)(0);
-console.log(order(2)(1)(0));
-
-// function hero(name) {
-//     this.name = name;
-//     var greet = function() {
-//     console.log(this.name);
-//     };
-//     return this.hero;
-// }
-
-// console.log(hero("ass")("ggh").greet());
-
-function gather(str) {
-    return  function(str2){
-        return this;
-    };
-}
-
-var fun = gather("a")("b")("c");
-console.log(fun());
-
-function gather(str) {
-    console.log("From gather!!!   " + str);
-
-    function order(num) {
-        console.log("From order!!!" + num);
-
-        function get() {
-            console.log("From get!!!" + str);
-        }
-
-        order.get = get;
-        return order;
-
+    if (this.values) {
+        this.values.push(str);
+    } else {
+        this.values = [str];
     }
+   
+    gather_obj = this;
+   
+    function order(num) {
+        if (gather_obj.order_values) {
+            gather_obj.order_values.push(num);
+        } else {
+            gather_obj.order_values = [num];
+        }
+
+        order_obj = this;
+
+            function get(params) {
+                var sortOrder = gather_obj.order_values;
+                var itemsToSort = gather_obj.values;
+                var resultArr = [];
+                var emptyString = "";
+                if(typeof sortOrder === 'undefined' || sortOrder.length == 0) {
+                    return itemsToSort.join(emptyString);
+                }
+                if(typeof itemsToSort === 'undefined' || sortOrder.length == 0) {
+                    return emptyString;
+                }
+                for(var i = 0; i < sortOrder.length; i++) {
+                    resultArr.push(itemsToSort[sortOrder[i]]);
+                }
+
+                return resultArr.join(emptyString);
+            }
+
+        gather.order.get = get;
+        return order;
+    }
+
     gather.order = order;
     return gather;
 }
 
-console.log(gather('a')('b')('c').order(2)(1)(0).get());
-
-
-
 
 module.exports = {secondsToDate, toBase2Converter, substringOccurrencesCounter, repeatingLitters, 
-    redundant, towerHanoi, matrixMultiplication
+    redundant, towerHanoi, matrixMultiplication, gather
 };
