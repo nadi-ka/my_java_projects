@@ -23,8 +23,11 @@ function createPost(){
 
 			<div id="upper_label_block">
 				<div class="text_block">
-					<p id="l_p_size">Certificate name</p>
-					<p id="s_p_size">Brief description</p>
+					<p id="l_p_size" class="cert_name">
+						<a class="main_cert_name_ref" href="item_details.html">
+						</a>
+					</p>
+					<p class="cert_descript" id="s_p_size">Brief description</p>
 				</div>
 				<div class="heart_block">
 					<img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
@@ -33,7 +36,7 @@ function createPost(){
 
 		 <div id="lower_label_block">
 			 <div class="price_block">
-				 <p id="l_p_size_bold">$100</p>
+				 <p class="cert_price" id="l_p_size_bold">$100</p>
 			 </div>
 			 <div class="cart_block">
 				 <form action="/cart/add" method="POST">
@@ -56,8 +59,11 @@ function createPost(){
 
 			<div id="upper_label_block">
 				<div class="text_block">
-					<p id="l_p_size">Certificate name</p>
-					<p id="s_p_size">Brief description</p>
+					<p id="l_p_size" class="cert_name">
+						<a class="main_cert_name_ref" href="item_details.html">
+						</a>
+					</p>
+					<p class="cert_descript" id="s_p_size">Brief description</p>
 				</div>
 				<div class="heart_block">
 					<img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
@@ -66,7 +72,7 @@ function createPost(){
 
 		 <div id="lower_label_block">
 			 <div class="price_block">
-				 <p id="l_p_size_bold">$100</p>
+				 <p class="cert_price" id="l_p_size_bold">$100</p>
 			 </div>
 			 <div class="cart_block">
 				 <form action="/cart/add" method="POST">
@@ -89,8 +95,11 @@ function createPost(){
 
 			<div id="upper_label_block">
 				<div class="text_block">
-					<p id="l_p_size">Certificate name</p>
-					<p id="s_p_size">Brief description</p>
+					<p id="l_p_size" class="cert_name">
+						<a class="main_cert_name_ref" href="item_details.html">
+						</a>
+					</p>
+					<p class="cert_descript" id="s_p_size">Brief description</p>
 				</div>
 				<div class="heart_block">
 					<img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
@@ -99,7 +108,7 @@ function createPost(){
 
 		 <div id="lower_label_block">
 			 <div class="price_block">
-				 <p id="l_p_size_bold">$100</p>
+				 <p class="cert_price" id="l_p_size_bold">$100</p>
 			 </div>
 			 <div class="cart_block">
 				 <form action="/cart/add" method="POST">
@@ -122,8 +131,11 @@ function createPost(){
 
 			<div id="upper_label_block">
 				<div class="text_block">
-					<p id="l_p_size">Certificate name</p>
-					<p id="s_p_size">Brief description</p>
+					<p id="l_p_size" class="cert_name">
+						<a class="main_cert_name_ref" href="item_details.html">
+						</a>
+					</p>
+					<p class="cert_descript" id="s_p_size">Brief description</p>
 				</div>
 				<div class="heart_block">
 					<img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
@@ -132,7 +144,7 @@ function createPost(){
 
 		 <div id="lower_label_block">
 			 <div class="price_block">
-				 <p id="l_p_size_bold">$100</p>
+				 <p class="cert_price" id="l_p_size_bold">$100</p>
 			 </div>
 			 <div class="cart_block">
 				 <form action="/cart/add" method="POST">
@@ -155,8 +167,11 @@ function createPost(){
 
 			<div id="upper_label_block">
 				<div class="text_block">
-					<p id="l_p_size">Certificate name</p>
-					<p id="s_p_size">Brief description</p>
+					<p id="l_p_size" class="cert_name">
+						<a class="main_cert_name_ref" href="item_details.html">
+						</a>
+					</p>
+					<p class="cert_descript" id="s_p_size">Brief description</p>
 				</div>
 				<div class="heart_block">
 					<img class="nav_icon" src="img/baseline_favorite_black_18dp.png">
@@ -165,7 +180,7 @@ function createPost(){
 
 		 <div id="lower_label_block">
 			 <div class="price_block">
-				 <p id="l_p_size_bold">$100</p>
+				 <p class="cert_price" id="l_p_size_bold">$100</p>
 			 </div>
 			 <div class="cart_block">
 				 <form action="/cart/add" method="POST">
@@ -202,6 +217,13 @@ function createPost(){
   	img.src = 'img/all/' + i + '.jpg';
   	var src = document.querySelectorAll(".main_cert_ref")[i - startShowImgFrom + divsSize];
   	src.appendChild(img);
+
+		document.querySelectorAll(".main_cert_name_ref")[i - startShowImgFrom + divsSize]
+			.innerHTML = certificateData[i][0];
+	  document.querySelectorAll(".cert_descript")[i - startShowImgFrom + divsSize]
+			.innerHTML = certificateData[i][1];
+	  document.querySelectorAll(".cert_price")[i - startShowImgFrom + divsSize]
+			.innerHTML = certificateData[i][2];
 	}
 
 }

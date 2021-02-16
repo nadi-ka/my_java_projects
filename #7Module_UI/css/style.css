@@ -415,6 +415,10 @@ input[type="file"] {
   height: 100%;
 }
 
+.main_cert_name_ref:hover {
+  opacity: 0.5;
+}
+
 #l_p_size {
   margin-bottom: 2px;
 }
